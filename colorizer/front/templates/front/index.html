@@ -1,1 +1,31 @@
-Greetings
+{% extends 'front/layout.html' %} {% load static %} {% block title %} Alex
+Vikulov: Colorizer {% endblock %} {% block body %}
+{% comment %} <img src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
+<div class="sect1 sect">
+  <h1> Alex Vikulov </h1>
+</div>
+<div class="sect2">
+  <h2>html</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolorum
+    recusandae tenetur sapiente dolore facere, provident sed perspiciatis,
+    consequatur in quis esse ipsam voluptas mollitia hic obcaecati quibusdam
+    suscipit nihil?
+  </p>
+</div>
+<div class="sect3 sect">
+    Me llamo programacion
+</div>
+<div class="sect2">
+  <h2>CSS</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae atque
+    fugiat ipsum voluptas vel commodi impedit veniam unde dolor!
+  </p>
+</div>
+<div class="sect4 sect">
+    Soy to pasion
+</div>
+{%endblock%} {% comment %} {% block script %}
+<script src="{% static 'network/network.js' %}"></script>
+{% endblock %} {% endcomment %}
