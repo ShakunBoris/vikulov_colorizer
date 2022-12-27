@@ -19,17 +19,15 @@
 
 .sect1 {
     background-image: url('/static/front/img/vikulov.webp');
-    /* padding-top: calc(90vh); */
+    /* padding-top: calc(90vh); */ 
     position: relative;
 }
 
-h1 {
+#h1 {
     background: black;
     color: white;
     width: 200px;
     height: 50px;
-    /* margin: 0 auto; */
-    /* float: center; */
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -37,11 +35,47 @@ h1 {
     text-align: center;
     line-height: 50px;
     border-radius: 15px 50px 30px;
-    /* position: fixed; */
-    /* bottom: 20px; */
     /* left: calc(50% - 100px); */
 }
 
-sect2 {
-    
+.sect2 {
+    width: 100%;
+    text-align: center;
+    padding: 60px 30px;
+}
+p {
+    padding: 40px 0;
+}
+
+.sectvideo {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: block;
+    align-items: center;
+    justify-self: center;
+}
+.video-text {
+    position: absolute;
+    top: 0%;
+    text-align: center; 
+    font-size: 18;
+    background: #fff;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0.7;
+}
+.video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#background-video {
+    min-width: 100%;
+}
+.sect3 {
+    height: 600px;
+    background-image: url('/static/front/img/camera_keyboard.jpg');
 }

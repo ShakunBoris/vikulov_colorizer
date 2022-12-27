@@ -1,8 +1,8 @@
 {% extends 'front/layout.html' %} {% load static %} {% block title %} Alex
-Vikulov: Colorizer {% endblock %} {% block body %}
-{% comment %} <img src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
+Vikulov: Colorizer {% endblock %} {% block body %} {% comment %} <img
+src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
 <div class="sect1 sect">
-  <h1> Alex Vikulov </h1>
+  <h1 id="h1">Alex Vikulov</h1>
 </div>
 <div class="sect2">
   <h2>html</h2>
@@ -13,6 +13,27 @@ Vikulov: Colorizer {% endblock %} {% block body %}
     suscipit nihil?
   </p>
 </div>
+<div class="sectvideo">
+  <h1 class="video-text">Colorizing example</h1>
+  <div class="video-container">
+    <video
+      id="background-video"
+      autoplay
+      loop
+      muted
+      poster="{% static 'front/img/negra.jpg' %}"
+    >
+      <source src="{% static 'front/img/negra_video.mp4' %}" type="video/mp4" />
+    </video>
+  </div>
+</div>
+<div class="sect2">
+    <h2>New One</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae atque
+      fugiat ipsum voluptas vel commodi impedit veniam unde dolor!
+    </p>
+  </div>
 <div class="sect3 sect">
     Me llamo programacion
 </div>
@@ -23,9 +44,7 @@ Vikulov: Colorizer {% endblock %} {% block body %}
     fugiat ipsum voluptas vel commodi impedit veniam unde dolor!
   </p>
 </div>
-<div class="sect4 sect">
-    Soy to pasion
-</div>
+<div class="sect4 sect">Soy to pasion</div>
 {%endblock%} {% comment %} {% block script %}
 <script src="{% static 'network/network.js' %}"></script>
 {% endblock %} {% endcomment %}
