@@ -1,6 +1,13 @@
 {% extends 'front/layout.html' %} {% load static %} {% block title %} Alex
 Vikulov: Colorizer {% endblock %} {% block body %} {% comment %} <img
 src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
+<div class="nav-bar">
+  logo
+  <ul>
+    <li><a href="#"> First </a></li>
+    <li><a href="#"> Second </a></li>
+  </ul>
+</div>
 <div class="sect1 sect">
   <h1 id="h1">Alex Vikulov</h1>
 </div>
@@ -28,23 +35,30 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
   </div>
 </div>
 <div class="sect2">
-    <h2>New One</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae atque
-      fugiat ipsum voluptas vel commodi impedit veniam unde dolor!
-    </p>
-  </div>
-<div class="sect3 sect">
-    Me llamo programacion
+  <h2> Some crap</h2>
+  <p> Some crap</p>
 </div>
+<div class="sect3 sect"> Some Crap</div>
 <div class="sect2">
-  <h2>CSS</h2>
+  <h2>Weddings .sect2 h2</h2>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae atque
-    fugiat ipsum voluptas vel commodi impedit veniam unde dolor!
+    .sect2 p Capture the Happiest Moments of Your Life. Wedding night included.
   </p>
 </div>
-<div class="sect4 sect">Soy to pasion</div>
-{%endblock%} {% comment %} {% block script %}
-<script src="{% static 'network/network.js' %}"></script>
-{% endblock %} {% endcomment %}
+<div class="sect4 sect">sect4 sect content</div>
+<div class="sect2">
+  <h2> Before-After Bar</h2>
+  <p>.sect2 p Before-After goes here:</p>
+</div>
+<div class="sect-before-after">
+  <div class="image before"></div>
+	<div class="image after"></div>
+	
+	<input type="range" class="slider" min="1" max="100" value="50" />
+	<div class="slider-button"></div>
+</div>
+{%endblock%} 
+{% block script %}
+<script src="{% static 'front/before-after.js' %}"></script>
+{% comment %} <script src="{% static 'network/network.js' %}"></script> {% endcomment %}
+{% endblock %} 

@@ -7,6 +7,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nav-bar {
+    background-color: transparent;
+    color: black;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+.nav-bar ul {
+    float: right;
+}
+.nav-bar a {
+    text-decoration: none;
+}
 
 .sect {
     background-attachment: fixed;
@@ -19,7 +32,6 @@
 
 .sect1 {
     background-image: url('/static/front/img/vikulov.webp');
-    /* padding-top: calc(90vh); */ 
     position: relative;
 }
 
@@ -31,7 +43,8 @@
     position: absolute;
     bottom: 0%;
     left: 50%;
-    margin: 0px -100px;
+    transform: translate(-50%, 0);
+    /* margin: 0px -100px; */
     text-align: center;
     line-height: 50px;
     border-radius: 15px 50px 30px;
@@ -78,4 +91,17 @@ p {
 .sect3 {
     height: 600px;
     background-image: url('/static/front/img/camera_keyboard.jpg');
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 600px;
+}
+
+.sect4 {
+    height: 600px;
+    background-image: url('/static/front/img/camera_keyboard.jpg');
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 600px;
 }
