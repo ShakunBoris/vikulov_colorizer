@@ -62,7 +62,8 @@ p {
 
 .sectvideo {
     position: relative;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     height: min-content;
     display: block;
     align-items: center;
