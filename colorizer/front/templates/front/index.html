@@ -8,7 +8,7 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
     <li><a href="#"> Second </a></li>
   </ul>
 </div>
-<div class="sect1 sect">
+<div class="sect1 sect wow bounceInDown">
   <h1 id="h1">Alex Vikulov</h1>
 </div>
 <div class="sect2">
@@ -20,7 +20,7 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
     suscipit nihil?
   </p>
 </div>
-<div class="sectvideo">
+<div class="sectvideo wow bounceInRight">
   <h1 class="video-text">Colorizing example</h1>
   <div class="video-container">
     <video
@@ -35,30 +35,32 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
   </div>
 </div>
 <div class="sect2">
-  <h2> Some crap</h2>
-  <p> Some crap</p>
+  <h2>Some crap</h2>
+  <p>Some crap</p>
 </div>
-<div class="sect3 sect"> Some Crap</div>
+<div class="sect3 sect wow bounceInRight" >Some Crap</div>
 <div class="sect2">
   <h2>Weddings .sect2 h2</h2>
   <p>
     .sect2 p Capture the Happiest Moments of Your Life. Wedding night included.
   </p>
 </div>
-<div class="sect4 sect">sect4 sect content</div>
+<div class="sect4 sect wow bounceInRight">sect4 sect content</div>
 <div class="sect2">
-  <h2> Before-After Bar</h2>
+  <h2>Before-After Bar</h2>
   <p>.sect2 p Before-After goes here:</p>
 </div>
-<div class="sect-before-after">
+<div class="sect-before-after overflow-hidden">
   <div class="image before"></div>
-	<div class="image after"></div>
-	
-	<input type="range" class="slider" min="1" max="100" value="50" />
-	<div class="slider-button"></div>
+  <div class="image after wow bounceInRight"></div>
+
+  <input type="range" class="slider" min="1" max="100" value="50" />
+  <div class="slider-button"></div>
 </div>
-{%endblock%} 
-{% block script %}
+{%endblock%} {% block script %}
 <script src="{% static 'front/before-after.js' %}"></script>
-{% comment %} <script src="{% static 'network/network.js' %}"></script> {% endcomment %}
-{% endblock %} 
+<script src="{% static 'front/wow.min.js' %}"></script>
+<script>
+  new WOW().init();
+</script>
+{% endblock %}
