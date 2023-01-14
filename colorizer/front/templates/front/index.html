@@ -57,10 +57,16 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
   <input type="range" class="slider" min="1" max="100" value="50" />
   <div class="slider-button"></div>
 </div>
+<div id="image-compare">
+  <img src="{% static 'front\img\fc_edward_sleepy.webp'%}" alt="before" />
+  <img src="{% static 'front\img\fc_edward_suicide.webp'%}" alt="after" />
+</div>
 {%endblock%} {% block script %}
 <script src="{% static 'front/before-after.js' %}"></script>
 <script src="{% static 'front/wow.min.js' %}"></script>
 <script>
   new WOW().init();
 </script>
+<script src="{% static 'front/image-compare.js' %}"></script>
+<script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
 {% endblock %}
