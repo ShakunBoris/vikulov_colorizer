@@ -1,6 +1,12 @@
-{% extends 'front/layout.html' %} {% load static %} {% block title %} Alex
-Vikulov: Colorizer {% endblock %} {% block body %} {% comment %} <img
-src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
+{% extends 'front/layout.html' %} {% load static %} 
+{% block title %} 
+Alex Vikulov: Colorizer 
+{% endblock %} 
+{% block style %} 
+<link rel='stylesheet' type="text/css" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+{% endblock%} 
+{% block body %} 
+{% comment %} <img src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
 <div class="nav-bar">
   logo
   <ul>
@@ -50,16 +56,19 @@ src={%static 'front/img/arab.jpg'%} alt="asd"> {% endcomment %}
   <h2>Before-After Bar</h2>
   <p>.sect2 p Before-After goes here:</p>
 </div>
-<div class="sect-before-after overflow-hidden">
+{% comment %} NOT RESPONSIVE {% endcomment %}
+{% comment %} <div class="sect-before-after overflow-hidden">
   <div class="image before"></div>
   <div class="image after wow bounceInRight"></div>
 
   <input type="range" class="slider" min="1" max="100" value="50" />
   <div class="slider-button"></div>
-</div>
-<div id="image-compare">
-  <img src="{% static 'front\img\fc_edward_sleepy.webp'%}" alt="before" />
-  <img src="{% static 'front\img\fc_edward_suicide.webp'%}" alt="after" />
+</div> {% endcomment %}
+<div class="img-compare">
+  <div id="image-compare">
+    <img src="{% static 'front\img\fc_edward_sleepy.webp'%}" alt="before" />
+    <img src="{% static 'front\img\fc_edward_suicide.webp'%}" alt="after" />
+  </div>
 </div>
 {%endblock%} {% block script %}
 <script src="{% static 'front/before-after.js' %}"></script>

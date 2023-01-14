@@ -9,10 +9,11 @@
     <link href="{% static 'front/styles.css' %}" rel="stylesheet">
     <link href="{% static 'front/before-after.css' %}" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{% static 'front/favicon.ico' %}">
-    <link type="text/css" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
     <link
     rel="stylesheet"
     href="{%static 'front/animate.css'%}">
+    {% block style %}
+    {% endblock %}
     {% block script %}
     {% endblock %}
 </head>
