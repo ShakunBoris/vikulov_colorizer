@@ -34,6 +34,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Application definition
 
 INSTALLED_APPS = [
+    'phonenumber_field',
     'front',
     'django_countries',
     'django.contrib.admin',
