@@ -6,3 +6,15 @@ from .forms import *
 
 def index(request):
     return render(request, 'front/index.html', {})
+
+def contact(request):
+    if request.method =="POST":
+        form = ApplicationForm(request.POST)
+        if  form.is_valid():
+            form.save()
+            return render(request, 'front/contact.html', {
+                'form': form
+                })
+    return render(request, 'front/contact.html', {
+            'form': ApplicationForm()
+            })

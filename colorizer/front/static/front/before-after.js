@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 //       .find("div.slider-button")
 //       .css({ left: "calc(" + pos + "% - 18px)" });
 //   });
-  document.querySelector(".slider").addEventListener("input", function(event) {
-    // alert('CHANGE');
-	let element = document.querySelector(".sect-before-after");
-	let pos = document.querySelector(".slider").value;
-    // element.remove();
-    // element.querySelector(".before").remove();
-	document.querySelector(".sect-before-after .before").style.width = `${pos}%`;
-	document.querySelector(".sect-before-after .slider-button").style.left = `calc(${pos}% - 18px)`;
-});
+//   document.querySelector(".slider").addEventListener("input", function(event) {
+//     // alert('CHANGE');
+// 	let element = document.querySelector(".sect-before-after");
+// 	let pos = document.querySelector(".slider").value;
+//     // element.remove();
+//     // element.querySelector(".before").remove();
+// 	document.querySelector(".sect-before-after .before").style.width = `${pos}%`;
+// 	document.querySelector(".sect-before-after .slider-button").style.left = `calc(${pos}% - 18px)`;
+// });
 });

@@ -18,4 +18,5 @@ class Application(models.Model):
     email = models.EmailField(max_length=254, blank=False)
     country = CountryField(blank_label='(select country)')
     whatsapp = PhoneNumberField(blank=True)
-    status = models.IntegerField(choices=APPLICATION_STATUSES.choices, default=1)
+    status = models.IntegerField(choices=APPLICATION_STATUSES.choices, default=0)
+    

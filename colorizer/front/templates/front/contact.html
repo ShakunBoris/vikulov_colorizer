@@ -1,0 +1,17 @@
+{% extends 'front/layout.html' %} {% load static %} 
+{% block title %} 
+Contact Alex
+{% endblock %} 
+{% block style %} 
+{% endblock%} 
+{% block body %} 
+<form action="{% url 'front:contact' %}" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit">
+</form>
+{%endblock%} {% block script %}
+{% comment %} <script src="{% static 'front/image-compare.js' %}"></script> {% endcomment %}
+{% endblock %}
