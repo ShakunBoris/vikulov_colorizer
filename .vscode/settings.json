@@ -1,9 +1,0 @@
-{
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    },
-    "files.exclude": {
-        "**/.git": false
-    }
-}
-
