@@ -13,7 +13,13 @@ def contact(request):
         if  form.is_valid():
             form.save()
             return render(request, 'front/contact.html', {
-                'form': form
+                'form': form,
+                'success': 'true'
+                })
+        else:
+            return render(request, 'front/contact.html', {
+                'form': form,
+                'success': 'false'
                 })
     return render(request, 'front/contact.html', {
             'form': ApplicationForm()
