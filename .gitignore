@@ -2,4 +2,4 @@
 /.vscode
 # ignore file
 .env
-prod.py
+# prod.py
