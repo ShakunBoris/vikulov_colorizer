@@ -14,7 +14,7 @@ def contact(request):
             form.save()
             return render(request, 'front/contact.html', {
                 'form': form,
-                'success': 'true'
+                'success': 'true',
                 })
         else:
             return render(request, 'front/contact.html', {
