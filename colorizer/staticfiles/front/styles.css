@@ -1,0 +1,141 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+}    */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+
+.nav-bar {
+    z-index: 10;
+    background-color: transparent;
+    color: black;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+.nav-bar ul {
+    float: right;
+}
+.nav-bar a {
+    text-decoration: none;
+}
+
+.sect {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-fill-mode: both;
+    width: 100%;
+    height: 100vh;
+}
+
+.sect1 {
+    background-image: url('/static/front/img/vikulov.webp');
+    position: relative;
+}
+
+#h1 {
+    background: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* margin: 0px -100px; */
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px 50px 30px;
+    /* left: calc(50% - 100px); */
+}
+
+.sect2 {
+    width: 100%;
+    text-align: center;
+    padding: 60px 30px;
+}
+p {
+    padding: 40px 0;
+}
+
+.sectvideo {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: min-content;
+    display: block;
+    align-items: center;
+    justify-self: center;
+}
+.video-text {
+    position: absolute;
+    top: 0%;
+    text-align: center; 
+    /* font-size: 18; */
+    background: #fff;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0.2;
+}
+.video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#background-video {
+    width: inherit;
+    /* min-width: 100%; */
+}
+.sect3 {
+    height: 600px;
+    background-image: url('/static/front/img/camera_keyboard.jpg');
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 600px;
+}
+
+.sect4 {
+    height: 600px;
+    background-image: url('/static/front/img/camera_keyboard.jpg');
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 600px;
+}
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
+
+#image-compare {
+    margin: 0 20%;
+}
