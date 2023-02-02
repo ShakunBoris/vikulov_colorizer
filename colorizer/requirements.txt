@@ -3,6 +3,7 @@ Django==4.1.4
 django-cors-headers==3.13.0
 django-countries==7.5
 django-phonenumber-field==7.0.2
+gunicorn==20.1.0
 phonenumberslite==8.13.4
 Pillow==9.3.0
 sqlparse==0.4.3
