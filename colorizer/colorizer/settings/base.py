@@ -14,9 +14,8 @@ from pathlib import Path
 import os
 
 # FOR ADMIN STYLES TO WORK????
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type("text/html", ".html", True)
+# import mimetypes
+# mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -131,7 +130,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://vikulovcolorizer-production.up.railway.app/contact', 'https://*.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://colorizer.up.railway.app/contact', 'https://*.railway.app']
 
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
