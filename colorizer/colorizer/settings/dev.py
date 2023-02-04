@@ -11,7 +11,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'colorizer.up.railway.app']
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'postgresDB',
+       'NAME': 'psql_test',
        'USER': 'postgres',
        'PASSWORD': 'postgres',
        'HOST': '127.0.0.1',
