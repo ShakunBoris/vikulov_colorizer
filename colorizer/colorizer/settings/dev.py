@@ -25,11 +25,16 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'colorizer.up.railway.app', 'colorize
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'railway',
-       'USER': 'postgres',
-       'PASSWORD': 'o8FbMYYcKAPgKYKEJIzc',
-       'HOST': 'containers-us-west-146.railway.app',
-       'PORT': '7010',
+    #    'NAME': 'railway',
+    #    'USER': 'postgres',
+    #    'PASSWORD': 'o8FbMYYcKAPgKYKEJIzc',
+    #    'HOST': 'containers-us-west-146.railway.app',
+    #    'PORT': '7010',
+        'NAME': os.environ['PGDATABASE'],
+       'USER': os.environ['PGUSER'],
+       'PASSWORD': os.environ['PGPASSWORD'],
+       'HOST': os.environ['PGHOST'],
+       'PORT': os.environ['PGPORT'],
    }
 }
 
