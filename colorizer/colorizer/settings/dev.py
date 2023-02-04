@@ -8,3 +8,13 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'colorizer.up.railway.app']
 # ALLOWED_HOSTS = ['*']
 
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'postgresDB',
+       'USER': 'postgres',
+       'PASSWORD': 'postgres',
+       'HOST': '127.0.0.1',
+       'PORT': '5432',
+   }
+}
