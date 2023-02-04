@@ -135,3 +135,4 @@ CSRF_TRUSTED_ORIGINS = ['https://colorizer.up.railway.app/contact', 'https://*.r
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+
