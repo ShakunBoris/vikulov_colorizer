@@ -8,33 +8,24 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'colorizer.up.railway.app', 'colorizer.dev.up.railway.app']
 # ALLOWED_HOSTS = ['*']
 
-
-#local POSTGRES
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'psql_test',
-#        'USER': 'postgres',
-#        'PASSWORD': 'postgres',
-#        'HOST': '127.0.0.1',
-#        'PORT': '5432',
-#    }
-# }
-
-#RAILWAY TEST MANUAL CONNECT POSTGRES
+# RAILWAY TEST MANUAL CONNECT POSTGRES 
+# NOW: If run locally it takes defaults and waits for local portgres server
+# if vars exist (online they do) run online server
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
+       # TO CONNECT TO ONLINE DB
     #    'NAME': 'railway',
     #    'USER': 'postgres',
     #    'PASSWORD': 'o8FbMYYcKAPgKYKEJIzc',
     #    'HOST': 'containers-us-west-146.railway.app',
     #    'PORT': '7010',
-        'NAME': os.environ['PGDATABASE'],
-       'USER': os.environ['PGUSER'],
-       'PASSWORD': os.environ['PGPASSWORD'],
-       'HOST': os.environ['PGHOST'],
-       'PORT': os.environ['PGPORT'],
+        # FOR ONLINE OFFLINE Automatic choice
+        'NAME': os.environ.get('PGDATABASE', 'psql_test'),
+       'USER': os.environ.get('PGUSER', 'postgres'),
+       'PASSWORD': os.environ.get('PGPASSWORD', 'postgres'),
+       'HOST': os.environ.get('PGHOST', '127.0.0.1'),
+       'PORT': os.environ.get('PGPORT', '5432'),
    }
 }
 
