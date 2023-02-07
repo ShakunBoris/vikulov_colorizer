@@ -11,6 +11,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'colorizer.up.railway.app', 'colorize
 # RAILWAY TEST MANUAL CONNECT POSTGRES 
 # NOW: If run locally it takes defaults and waits for local portgres server
 # if vars exist (online they do) run online server
+
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
