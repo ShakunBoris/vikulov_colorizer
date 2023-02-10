@@ -6,7 +6,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # print('!!!!!!!!!!!!!!!!!!!!!!!!! PROD.Py!!!!!!!!!!!!!!!!!!!!!!')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['colorizer.up.railway.app',]
+ALLOWED_HOSTS = ['nginx-dev.up.railway.app', 'colorizer.up.railway.app',]
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
